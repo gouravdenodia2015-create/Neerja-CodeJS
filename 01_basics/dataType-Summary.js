@@ -12,7 +12,7 @@ let userEmail;              //undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 123456789876543n
 
@@ -30,8 +30,28 @@ let arrayDemo = {
 const myFunction = function(){
     console.log("Hello World");
 }
-console.log(typeof bigNumber);
-console.log(typeof outSideTemp);
-console.log(typeof scoreValue);
-console.log(typeof myFunction);
-console.log(typeof id);
+// console.log(typeof bigNumber);
+// console.log(typeof outSideTemp);
+// console.log(typeof scoreValue);
+// console.log(typeof myFunction);
+// console.log(typeof id);
+
+//  +++++++++++++++++++++++++++++++++++++   MEMORY ALLOCATION   +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let myYoutubeName = "NeerjaIsBest";
+let anotherName = myYoutubeName;
+anotherName = "Vishu"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    name: "Neerja",
+    email: "neerja@gmail.com"
+}
+
+let userTwo = userOne;
+userTwo.name = "Neerja Dinodia"
+
+console.log(userOne.name);
+console.log(userTwo.name);
