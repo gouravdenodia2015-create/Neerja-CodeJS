@@ -15,12 +15,21 @@ const JSUser = {
     lastLoginDays : ["Monday", "Saturday"]
 }
 
-console.log(JSUser.email);
-console.log(JSUser["email"]);
-console.log(JSUser["full name"]);
-console.log(JSUser[mySymbol]);
+// console.log(JSUser.email);
+// console.log(JSUser["email"]);
+// console.log(JSUser["full name"]);
+// console.log(JSUser[mySymbol]);
 
 JSUser.email = "neerjadinodia@gmail.com" 
-Object.freeze(JSUser)
+// Object.freeze(JSUser)
 JSUser.age = 21;
-console.log(JSUser)
+// console.log(JSUser)
+
+JSUser.greeting = function(){
+    console.log("Hello World");
+}
+JSUser.greetingTwo = function(){
+    console.log(`Hello ${this.name}`);
+}
+console.log(JSUser.greeting());
+console.log(JSUser.greetingTwo());
