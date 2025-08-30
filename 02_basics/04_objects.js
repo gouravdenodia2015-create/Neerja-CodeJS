@@ -65,14 +65,29 @@ const userObj = [
 // console.log(userObj[1].email);
 // console.log(userObj);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));       //  IMP
-console.log(Object.values(tinderUser));     //  IMP
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));       //  IMP
+// console.log(Object.values(tinderUser));     //  IMP
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("name"));
-console.log(tinderUser.hasOwnProperty("full name"));
+// console.log(tinderUser.hasOwnProperty("name"));
+// console.log(tinderUser.hasOwnProperty("full name"));
 
+const course = {
+    courseName : "NodeJS",
+    coursePrice : 999,
+    courseInstructor : "Hitesh"
+}
 
+//  course.courseInstructor         //  USES FOR ACCESSING ANY OBJECT KEY
 
+const {courseInstructor : instructor} = course      //  DESTRUCTURING THE OBJECTS
+console.log(instructor);
 
+//  JSON SYNTAX
+
+// {
+//     "name" : "Neerja",
+//     "email" : "neerja@gmail.com"
+//     "gender" : "female"
+// }
