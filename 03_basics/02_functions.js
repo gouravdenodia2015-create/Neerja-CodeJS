@@ -21,7 +21,7 @@ function handleObject(anyObject)
 //     price : 399
 // })
 
-//  ARRAY INSIDE OBJECT
+//  ARRAY INSIDE FUNCTION
 
 const demoArray = [100, 200, 300, 600]
 
