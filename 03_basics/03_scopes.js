@@ -11,6 +11,25 @@ if(true)
 }
 // var c = 3000
 
-console.log("A :", a);
+// console.log("A :", a);
 // console.log("B :", b);
 // console.log("C :", c);
+
+function one()
+{
+    const username = "Neerja"
+    
+    function two()
+    {
+        const website = "youtube"
+        console.log(username);
+        
+    }
+    // console.log(website);
+    // two();
+    
+}
+
+// one()
+
+
